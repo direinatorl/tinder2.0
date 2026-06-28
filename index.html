@@ -15,11 +15,31 @@
             <h2>Tinder</h2>
         </header>
 
-        <main class="card-container" id="card-container">
+        <!-- Tela de Criação de Conta -->
+        <div id="login-screen" class="login-screen">
+            <h3>Crie seu Perfil</h3>
+            
+            <div class="input-group">
+                <label for="user-name">Seu Nome</label>
+                <input type="text" id="user-name" placeholder="Como quer ser chamado?">
+            </div>
+            
+            <div class="input-group">
+                <label for="user-image">Sua Melhor Foto</label>
+                <input type="file" id="user-image" accept="image/*">
+                <!-- Preview da imagem -->
+                <div id="image-preview" class="image-preview"></div>
+            </div>
+
+            <button id="start-btn" class="start-btn">Entrar e Deslizar</button>
+            <p class="hint">Dica: Você pode usar as setas do teclado (← e →) no computador!</p>
+        </div>
+
+        <main class="card-container" id="card-container" style="display: none;">
             <!-- Cards serão inseridos aqui pelo JavaScript -->
         </main>
 
-        <footer class="app-footer">
+        <footer class="app-footer" id="app-footer" style="display: none;">
             <button class="action-btn nope-btn" id="nope-btn">
                 <i class="fa-solid fa-xmark"></i>
             </button>
